@@ -21,7 +21,7 @@ let check = ()=>{
 		statistic =	JSON.parse(statistic)
 		//add online
 		statistic[days[day]][hour].push(online[1])
-		
+		console.log(statistic)
 		statistic = JSON.stringify(statistic)
 		//save online to the file
 		fs.writeFileSync('statistic.json',statistic)
