@@ -37,4 +37,4 @@ let check = ()=>
 	)
 }
 
-setInterval(check, 1000*1)
+setInterval(check, 1000*60*10)
