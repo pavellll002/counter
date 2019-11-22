@@ -5,7 +5,7 @@ const fs 		= require('fs')
 let check = ()=>{
 	//get file
 	request('https://chatvdvoem.ru/',(err,res,body)=>{
-
+		if(err) return console.log(err)
 		let str = body//body file
 		//number of online
 		let online = str.match(/<strong id="online_counter">(\d*)<\/strong>/)
